@@ -32,3 +32,9 @@
 <script src="{{ asset('assets/admin/dist/js/pages/dashboard.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('assets/admin/dist/js/demo.js') }}"></script>
+
+<!-- DataTables -->
+<script src="{{ asset('assets/admin/plugins/datatables/jquery.dataTables.js') }}"></script>
+<script src="{{ asset('assets/admin/plugins/datatables-bs4/js/dataTables.bootstrap4.js') }}"></script>
+
+@yield('script')

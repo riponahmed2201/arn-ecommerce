@@ -17,4 +17,10 @@ Route::get('/', function () {
 
 //ADMIN ROUTES
 
-Route::get('admin/dashboard','Admin\AdminController@index');
+Route::get('admin/dashboard','Admin\AdminController@index')->name('admin.dashboard');
+
+//CATEGORY ROUTES
+
+Route::get('category/create','Admin\CategoryController@create')->name('category.create');
+Route::get('category/index','Admin\CategoryController@index')->name('category.index');
+Route::post('category/store','Admin\CategoryController@store')->name('category.store');
