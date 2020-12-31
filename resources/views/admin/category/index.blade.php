@@ -37,8 +37,8 @@
                                 <img style="width: 60px; height:60px" src="{{ asset('uploads/category/'.$category->image) }}" alt="">
                             </td>
                             <td style="width: 80px">
-                                <a href="" class="btn btn-info btn-xs"> <i class="fa fa-edit"></i> </a>
-                                <a href="" class="btn btn-danger btn-xs"> <i class="fa fa-trash-alt"></i> </a>
+                                <a href="{{route('category.edit',$category->id)}}" class="btn btn-info btn-xs"> <i class="fa fa-edit"></i> </a>
+                                <a href="{{route('category.delete',$category->id)}}" class="btn btn-danger btn-xs"> <i class="fa fa-trash-alt"></i> </a>
                             </td>
                             </tr>
                         @endforeach

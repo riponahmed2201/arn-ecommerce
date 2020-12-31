@@ -24,3 +24,6 @@ Route::get('admin/dashboard','Admin\AdminController@index')->name('admin.dashboa
 Route::get('category/create','Admin\CategoryController@create')->name('category.create');
 Route::get('category/index','Admin\CategoryController@index')->name('category.index');
 Route::post('category/store','Admin\CategoryController@store')->name('category.store');
+Route::get('category/edit/{id}','Admin\CategoryController@edit')->name('category.edit');
+Route::post('category/update/{id}','Admin\CategoryController@update')->name('category.update');
+Route::get('category/delete/{id}','Admin\CategoryController@delete')->name('category.delete');
