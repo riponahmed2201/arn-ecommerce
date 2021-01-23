@@ -34,7 +34,7 @@
 
           <li class="nav-item has-treeview">
             <a href="javascript:void(0)" class="nav-link">
-              <i class="nav-icon fas fa-list"></i>
+              <i class="nav-icon fas fa-list text-green"></i>
               <p>
                 Category
                 <i class="right fas fa-angle-left"></i>
@@ -43,14 +43,38 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{ route('category.create') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-circle nav-icon text-green"></i>
                   <p> Create Category</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ route('category.index') }}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="far fa-circle nav-icon text-green"></i>
                   <p> All Category</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item has-treeview">
+            <a href="javascript:void(0)" class="nav-link">
+              <i class="nav-icon fas fa-list text-danger"></i>
+              <p>
+                Product Details
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{ route('product.details.create') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-danger"></i>
+                  <p> Create Product Details</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{ route('product.details.index') }}" class="nav-link">
+                  <i class="far fa-circle nav-icon text-danger"></i>
+                  <p> All Product Details</p>
                 </a>
               </li>
             </ul>
